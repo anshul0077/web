@@ -16,14 +16,14 @@ html,body{
     width: 100%;
 background-color: brown;
 }
-.navbar-1 nav ul{
+.navbar-1 #nav1 ul{
     padding: 5vw 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
  
 }
-.navbar-1 nav ul li{
+.navbar-1 #nav1 ul li{
     border-radius: 5px;
     padding: 1vw 2.5vw;
     list-style: none;
@@ -31,7 +31,7 @@ background-color: brown;
     font-size: 1.5vw;
     position: relative;
 }
-nav li::after{
+#nav1 li::after{
     content: "";
     position: absolute;
     height: 2px;
@@ -42,7 +42,7 @@ nav li::after{
     transition: 0.3s ease-in-out;
     transform: scaleX(0);
 }
-nav li:hover::after{
+#nav1 li:hover::after{
     transform: scaleX(1);
 
 }
@@ -59,3 +59,36 @@ nav li:hover::after{
     color: white;
 }
 
+.navbar-2{
+    height: 30vh;
+    width: 100%;
+background-color: brown;
+}
+.navbar-2>#nav2>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vw 10vw;
+}
+.navbar-2>#nav2>ul>li{
+    list-style: none;
+    padding: 1vw;
+    color: white;
+    font-size: 1.5vw;
+position: relative;
+}
+
+.navbar-2>#nav2>ul>li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100% ;
+    width: 2px;
+    background-color: aqua;
+    top: 0;
+    transform: scaleY(0);
+    transition:all ease-in-out 0.3s;
+}
+.navbar-2>#nav2>ul>li:hover::after{
+    transform: scaleY(1);
+}
