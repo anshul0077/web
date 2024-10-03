@@ -21,6 +21,7 @@ background-color: brown;
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
 }
 .navbar-1 nav ul li{
     border-radius: 5px;
@@ -28,6 +29,22 @@ background-color: brown;
     list-style: none;
     color: white;
     font-size: 1.5vw;
+    position: relative;
+}
+nav li::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: aqua;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+nav li:hover::after{
+    transform: scaleX(1);
+
 }
 
 #login-btn{
