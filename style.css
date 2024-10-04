@@ -92,3 +92,39 @@ position: relative;
 .navbar-2>#nav2>ul>li:hover::after{
     transform: scaleY(1);
 }
+.navbar-3{
+   height: 80vh;
+    width: 100%;
+background-color: brown;
+}
+.navbar-3 #nav3 ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding: 5vw 10vw;
+    gap: 50px;
+}
+.navbar-3 #nav3 ul li{
+    font-size: 1.5vw;
+    list-style: none;
+    color: white;
+    padding: 1vw;
+}
+.navbar-3 #nav3 ul  button{
+width: 25%;
+
+}
+.navbar-3 #nav3 ul li:hover{
+    background-color: rgb(221, 65, 65);
+    width: 25%;
+    transition: all ease-in-out 0.5s;
+    
+    border-radius: 10px;
+}
+
+.navbar-3 #nav3 ul button:hover{
+    border: 1px solid whitesmoke;
+    background-color: rgb(233, 38, 38);
+    transition: all ease-in-out 0.5s;
+}
