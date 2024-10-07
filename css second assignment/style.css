@@ -9,7 +9,7 @@ html,body{
 
 }
 .container{
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     background-color: rgb(39, 39, 39);
 }
@@ -86,7 +86,7 @@ footer p{
 @media (max-width:600px) {
     .container{
         /* background-color: blue; */
-    height: 150%;
+    height: 140%;
     }
     .item{
         width: 100%;
