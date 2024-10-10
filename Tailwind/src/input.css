@@ -17,6 +17,3 @@
 .h{
     @apply text-2xl font-bold
 }
-.ho{
-    @apply hover:
-}
