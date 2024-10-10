@@ -20,3 +20,12 @@
 .hove{
 @apply hover:text-white hover:bg-blue-600
 }
+.butn{
+    @apply bg-green-600 p-2 rounded-md text-white px-6
+}
+.visi{
+    @apply hidden sm:block
+}
+.ci{
+    @apply w-1/6 rounded-md
+}
