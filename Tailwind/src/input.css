@@ -27,5 +27,12 @@
     @apply hidden sm:block
 }
 .ci{
-    @apply w-1/6 rounded-md
+    @apply w-3/4 rounded-md object-cover
+}
+.sub{
+    
+    @apply mt-6 text-green-600 font-medium text-left
+}
+.contnt-h2{
+    @apply font-bold 
 }
