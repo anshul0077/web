@@ -957,6 +957,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -990,6 +995,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.decoration-green-600 {
+  text-decoration-color: #16a34a;
 }
 
 .shadow-2xl {
