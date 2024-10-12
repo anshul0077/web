@@ -7,3 +7,9 @@ console.log("Hello")
 process.stdout.write("Chai") // always print in the single line
 process.stdout.write("Chai")
 ////////////////////////////// ChaiChai
+
+console.table({Name:"Anshul",
+    Age:19,
+
+})
+ // This will show the data in tabular form in row and columns
