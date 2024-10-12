@@ -13,3 +13,10 @@ console.table({Name:"Anshul",
 
 })
  // This will show the data in tabular form in row and columns
+
+ 
+console.warn({Name:"Anshul",
+    Age:19,
+
+})
+// This will used to  show the warning  the color is being with redish or orange color but in browser not in node
