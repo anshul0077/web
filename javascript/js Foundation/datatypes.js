@@ -38,3 +38,21 @@
 
 
  //example of datatypes
+ let number=100 // number
+ let name= "anshul" //string
+ let isloggedin=true //boolean
+
+ //object
+
+ let arr=["Gtr","Supra","Tarzn"] //Array
+ let user={
+    name:"Anshul",
+    age:19,          // OBject
+ }
+
+ let mainscore=score   // we can give the another variable in the variable  it's acceptable
+
+
+ // To print anythng in the js we use js
+
+ console.log(mainscore)
