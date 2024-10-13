@@ -31,4 +31,22 @@ let srtict2 = 2===2 //true
 
 //logical operator
 
+// And &&
+let isLoggedIn=true
+let isPaid=true
+console.log(isLoggedIn && isPaid);//true
+console.log(isLoggedIn && isPaid);//false, If any of them is false it give false back
+
+// OR ||
+
+let emailLogin=true
+let gmailLogin=false
+console.log(emailLogin || gmailLogin); // True , it give true when one of them is true ,
+console.log(emailLogin || gmailLogin); // false, it give false when both of them is false ,
+
+//
+
+
+
+
  
