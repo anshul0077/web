@@ -13,6 +13,18 @@ let div=10/5  //2
 let reminder= 10%5  //0
 let exponent =2**4  // 16
 
+// increment operator
+
+let credit=100
+credit++  // 101
+
+// Decrement operator
+
+let js=200
+js--  // 199
+
+
+
 //realtional operation
 
 let one = 3==3  //true
@@ -44,9 +56,33 @@ let gmailLogin=false
 console.log(emailLogin || gmailLogin); // True , it give true when one of them is true ,
 console.log(emailLogin || gmailLogin); // false, it give false when both of them is false ,
 
-//
+// Not !
 
+let oop=true
 
+console.log( ! opp); // it will reverse the things true = false ,,, false = true
+
+ 
+
+//Assignment OPerator
+
+let Assignment1 = 1
+Assignment1 +=10 // 11
+
+let Assignment2 =2
+Assignment2-=1 //1
+
+let Assignment3 =4
+Assignment3*=4 // 16
+
+let Assignment4 =2
+Assignment4/=2 //0
+
+let Assignment5= 4
+Assignment5%=2 // 2
+
+let Assignment6 =3
+console.log(Assignment6**3) //27
 
 
  
