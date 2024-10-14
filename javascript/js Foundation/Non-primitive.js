@@ -18,6 +18,8 @@ console.log(username['firstname']);
 console.log(username['age']);
 
 //Array
+let heros=['a','b','c']
+console.log(heros[1]);
 
 
 
