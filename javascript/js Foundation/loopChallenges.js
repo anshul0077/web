@@ -1,0 +1,33 @@
+let selectedTeas=[]
+let teas=['green tea','black tea','chai','oolong tea']
+for(let i=0;i<teas.length;i++){
+    if(teas[i]=='chai'){
+        break;
+    }
+    selectedTeas.push(teas[i])
+    
+
+}
+console.log(selectedTeas);
+
+// 2
+let visitedCity=[]
+let cities=['Paris','Landon','New York','Berlin']
+for(let i=0;i<cities.length;i++){
+    if(cities[i]==='Paris'){
+        continue;
+    }
+    visitedCity.push(cities[i])
+}
+console.log(visitedCity);
+
+//3
+let number=[1,2,3,4,5]
+let smallNumber=[]
+for (const num of number) {
+    if(num ===4){
+        break
+    }
+    smallNumber.push(num)
+}
+console.log(smallNumber);
