@@ -31,3 +31,15 @@ for (const num of number) {
     smallNumber.push(num)
 }
 console.log(smallNumber);
+
+//4
+let tteas=['chai','green tea','Herbal tea','black tea']
+let prefferdTeas=[]
+for (const tt of tteas) {
+    if(tt==='herbal tea' || tt==='Herbal tea'){
+        continue;
+    }
+    prefferdTeas.push(tt)
+}
+
+console.log(prefferdTeas);
