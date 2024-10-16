@@ -45,3 +45,9 @@ for (const tt of tteas) {
 console.log(prefferdTeas);
 
 //5
+const city={
+paris:40000,
+Berlin:35000,
+UK:60000,
+Canada:30000,
+}
