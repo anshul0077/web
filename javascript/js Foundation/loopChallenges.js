@@ -51,8 +51,3 @@ Berlin:35000,
 UK:60000,
 Canada:30000,
 }
-for (const c in city) {
-
-        
-    
-}
