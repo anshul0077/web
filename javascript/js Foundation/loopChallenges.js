@@ -50,4 +50,11 @@ paris:40000,
 Berlin:35000,
 UK:60000,
 Canada:30000,
+} 
+
+for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
+    }
 }
