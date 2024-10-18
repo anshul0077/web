@@ -52,10 +52,11 @@ UK:60000,
 Canada:30000,
 } 
 for (const key in city) {
-    if(35000){
+    if(city[key]===35000){
         continue;
     }
     console.log(city[key]);
     
+
 }
 
