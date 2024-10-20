@@ -94,3 +94,15 @@ arrr.forEach(e => {
     availabletea.push(e)
 });
 console.log(availabletea);
+
+//8
+let citycollection=["sydney","Toyko","Berlin", "Paris"]
+let traveledcity=[]
+citycollection.forEach(e => {
+    if(e=="sydney"){
+        return
+    }
+    traveledcity.push(e)
+
+});
+console.log("traveled city",traveledcity);
