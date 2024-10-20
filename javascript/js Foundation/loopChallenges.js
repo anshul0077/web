@@ -67,3 +67,19 @@ for (const city in citypopulation) {
 console.log(newCity);
 
 //6
+let worldcities={
+ 
+   "sydney":5000000,
+   "Toyko":9000000,
+   "Berlin":3500000,
+   "Paris":2200000,
+}
+let largeCities={}
+for (const wciti in worldcities) {
+    if(worldcities[wciti]< 3000000){
+        continue;
+    }
+     largeCities[wciti]=worldcities[wciti]
+  
+}
+console.log(largeCities);
