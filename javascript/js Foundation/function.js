@@ -12,3 +12,9 @@ function orderdtea(teatype){
     return confirmOrder()
 }
 console.log(orderdtea("Green tea"));
+//3
+const calculateTotal=(prize,quantity)=>{
+    let totalCost=prize*quantity
+      return totalCost
+}
+console.log(calculateTotal(10,20));
