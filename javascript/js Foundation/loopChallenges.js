@@ -83,3 +83,14 @@ for (const wciti in worldcities) {
   
 }
 console.log(largeCities);
+
+//7
+let arrr=['earl grey','green tea','chai','oolong tea']
+let availabletea=[]
+arrr.forEach(e => {
+    if(e=="chai"){
+    return
+    }
+    availabletea.push(e)
+});
+console.log(availabletea);
