@@ -45,18 +45,25 @@ for (const tt of tteas) {
 console.log(prefferdTeas);
 
 //5
-const city={
+const citypopulation={
 paris:40000,
-Berlin:35000,
 UK:60000,
 Canada:30000,
+Berlin:35000,
 } 
-for (const key in city) {
-    if(city[key]===35000){
-        continue;
+
+
+
+
+const newCity={}
+for (const city in citypopulation) {
+    // console.log(citypopulation[city]);
+    if(city=='Berlin'){
+        break;
     }
-    console.log(city[key]);
+    newCity[city]=citypopulation[city]
     
-
 }
+console.log(newCity);
 
+//6
