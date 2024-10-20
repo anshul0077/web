@@ -106,3 +106,16 @@ citycollection.forEach(e => {
 
 });
 console.log("traveled city",traveledcity);
+
+// 9
+let num=[2,5,7,9,]
+let doublenumber=[]
+for(let i=0;i<num.length;i++){
+    if(num[i]==7){
+        continue
+    }
+    doublenumber.push(num[i]*2)
+}
+console.log(doublenumber);
+
+
