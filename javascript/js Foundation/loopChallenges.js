@@ -119,3 +119,14 @@ for(let i=0;i<num.length;i++){
 console.log(doublenumber);
 
 
+// 10
+let mytea=["chai","green tea","black tea","jasime tea","herbal tea lemon flavour"]
+let  shorttea=[]
+for (const teas of mytea) {
+    if(teas.length>10){
+        break
+    }
+    shorttea.push(teas)
+    
+}
+console.log(shorttea);
