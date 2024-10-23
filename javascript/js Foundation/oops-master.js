@@ -79,3 +79,24 @@ console.log(b1.getbankaccount());
 
 //Abstraction
 
+
+class makecoffee{
+    start(){
+return ` Start the machine...`
+    }
+    bruhcoffee(){
+return `brewing a coffee` 
+    }
+    pressStartButton(){
+        let stmachine=this.start()
+        let stbcoffee=this.bruhcoffee()
+        return ` ${stmachine} + ${stbcoffee}`
+    }
+}
+let ob1=new makecoffee()
+// console.log(ob1.start());
+// console.log(ob1.bruhcoffee());
+console.log(ob1.pressStartButton());
+
+
+
