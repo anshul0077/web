@@ -99,4 +99,24 @@ let ob1=new makecoffee()
 console.log(ob1.pressStartButton());
 
 
+// polymorphism
+
+class sparrow {
+fly(){
+    return ` flying...`
+}
+
+}
+class pengiun extends sparrow
+{
+    fly(){
+        return ` can't flying`
+    }
+}
+let birs=new sparrow()
+let pengs=new pengiun()
+console.log(birs.fly());
+
+console.log(pengs.fly());
+
 
