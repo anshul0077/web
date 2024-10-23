@@ -59,3 +59,23 @@ class cars extends vehical {
 let mycar = new cars("ANshul",20)
 console.log(mycar.start());
  
+
+//Encapsulation
+
+class Bankaccount{
+    #balance=0;
+    deposit(amount){
+         this.#balance+=amount
+        return this.#balance
+    }
+    getbankaccount(){
+        return `${this.#balance}`
+    }
+}
+let b1=new Bankaccount()
+b1.deposit(2000)
+console.log(b1.getbankaccount());
+
+
+//Abstraction
+
