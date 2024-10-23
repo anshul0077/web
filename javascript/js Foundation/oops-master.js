@@ -120,3 +120,16 @@ console.log(birs.fly());
 console.log(pengs.fly());
 
 
+
+
+// static 
+
+class claculator{
+    static add(a,b){
+        return a+b
+    }
+
+}  // static is called by the class it self  , here we can not create object to access the method
+console.log(claculator.add(2,4));
+
+
