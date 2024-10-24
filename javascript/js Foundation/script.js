@@ -63,8 +63,10 @@ document.querySelector('#teaList').addEventListener('click',function(e){
 //example 8
 document.getElementById('feedbackForm').addEventListener('submit',function(e){
   e.preventDefault()
+  
   let fi=document.querySelector('#feedbackInput')
   let feedback=document.querySelector("#feedbackDisplay")
+console.log(fi);
 
   feedback.textContent=` Feedback  : ${fi.value}`
   feedback.style.backgroundColor="yellow"
@@ -72,4 +74,14 @@ document.getElementById('feedbackForm').addEventListener('submit',function(e){
   feedback.style.color="black"
   
 
+})
+//example 9
+
+document.addEventListener("DOMContentLoaded",function(){
+  document.getElementById("domStatus").textContent="DOM fully loaded"
+})
+
+//example 10
+document.getElementById('toggleHighlight').addEventListener('click',function(){
+  document.querySelector("#descriptionText").classList.toggle('highlight')
 })
