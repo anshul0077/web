@@ -61,3 +61,15 @@ document.querySelector('#teaList').addEventListener('click',function(e){
 
 })
 //example 8
+document.getElementById('feedbackForm').addEventListener('submit',function(e){
+  e.preventDefault()
+  let fi=document.querySelector('#feedbackInput')
+  let feedback=document.querySelector("#feedbackDisplay")
+
+  feedback.textContent=` Feedback  : ${fi.value}`
+  feedback.style.backgroundColor="yellow"
+  feedback.style.fontSize="5vw"
+  feedback.style.color="black"
+  
+
+})
