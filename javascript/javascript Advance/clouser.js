@@ -4,6 +4,7 @@ function outer(){
         counter++
         return counter
     }
+    
 }
 let increment=outer()
 console.log(increment());
