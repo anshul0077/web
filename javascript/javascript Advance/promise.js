@@ -43,10 +43,9 @@
 
 let login=new Promise((resolve,reject)=>{
     let user=prompt("Enter value ")
-      let u= Number(user)
-      console.log(typeof u);
+ 
       
-    if(u===String){
+    if(user.value==="AAA"){
         resolve("you are Genius [Fullfilled]")
     }
     else{
