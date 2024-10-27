@@ -46,7 +46,7 @@ let login=new Promise((resolve,reject)=>{
       let u= Number(user)
       console.log(typeof u);
       
-    if(u===String){
+    if(u===Number){
         resolve("you are Genius [Fullfilled]")
     }
     else{
@@ -57,6 +57,6 @@ login.then((mms)=>{
 console.log(mms);
 
 }).catch((error)=>{
-console.error(error);
+console.log(error);
 
 })
