@@ -708,6 +708,14 @@ video {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
 .min-h-52 {
   min-height: 13rem;
 }
@@ -964,9 +972,14 @@ video {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800 {
+.bg-slate-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-teal-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 
 .object-cover {
