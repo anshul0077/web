@@ -46,17 +46,17 @@ let login=new Promise((resolve,reject)=>{
       let u= Number(user)
       console.log(typeof u);
       
-    if(u===Number){
+    if(u===String){
         resolve("you are Genius [Fullfilled]")
     }
     else{
-        reject("You are the fucking bitch [Error is here]")
+        reject("why are you giving wrong location")
     }
 })
 login.then((mms)=>{
 console.log(mms);
 
 }).catch((error)=>{
-console.log(error);
+console.error(error);
 
 })
