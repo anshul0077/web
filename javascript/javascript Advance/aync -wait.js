@@ -8,7 +8,7 @@ function fetchUserData(){
         // reject("Mishappening in Fetching user data")
     })
 }
- let data=fetchUserData()
+
 // data                           OLD STUFF
 // .then()
 // .catch()
