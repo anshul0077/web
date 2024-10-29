@@ -28,3 +28,40 @@ async function gameData() {
     }
 }
 gameData()
+
+
+
+
+
+// another fun with phone data
+
+function iphonedata(){
+return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+     resolve('"Fetch iphone data",{Model:"Iphone 16",Brand:"Iphone",prize:"1,50,000"}')
+    },5000)
+})
+}
+function samsungData(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+         resolve('Fetch Samsung data"{Model:"S 24 Ultra",Brand:"Samsung",prize:"1,20,000"}')
+        },2000)
+    })
+}
+async function fetchSamartPhone() {
+    try {
+        console.log("Phones data fetching ....");
+        let [iData,sData]= await Promise.all([iphonedata(),samsungData()])
+        console.log(iData);
+        console.log(sData);
+        console.log("Fetched phone data Sucessfully");
+        
+        
+        
+    } catch (error) {
+        console.erro("Failed to fetch Phone data");
+        
+    }
+}
+fetchSamartPhone()
