@@ -26,10 +26,10 @@ let recipeDataContainer=document.querySelector(".recipe-data")
                 <p class="text-lg">${e.strArea} Dish</p>
                 <p>Belongs to <span class="text-teal-400 text-lg font-mono font-bold">${e.strCategory}</span> category</p>
             </div>
-       <div class="h-96 rounded-3xl w-[700px] hidden bg-red-900 fixed top-52 left-96 z-10"></div>
-            <div class="view-recipe">
-                <button class="recipe-button shadow-lg bg-green-500 p-3 rounded-lg pl-6 pr-6">View Recipe</button>
-            </div>
+       
+         
+                <button  class="recipe-button shadow-lg bg-green-500 p-3 rounded-lg pl-6 pr-6">View Recipe</button>
+    
         </div>`
         
     });
@@ -52,12 +52,14 @@ function dishCount(){
 
 
 recipeDataContainer.addEventListener('click',(e)=>{
-    if(e.target.tagName==="BUTTON"){
-      
-    }
-    else{
-        console.log("nopie");
+let over=document.querySelector(".over")
+if(e.target.tagName==="DIV"){
+       over.style.display="flex"
+}
+
+     
         
-    }
+      
+   
 
 })

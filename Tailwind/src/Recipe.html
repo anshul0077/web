@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- main container -->
-    <div class="wrapper text-white h-screen w-screen bg-slate-900"> 
+    <div class="wrapper overflow-x-hidden text-white h-screen w-screen"> 
         <!-- page1 -->
   <div id="home" class="p-4 h-full w-full bg-cover bg-[url('https://foodhub.modeltheme.com/wp-content/uploads/2020/02/foodhub-slider-main-food-v4.jpg?id=20741')] ">
  <nav class="w-full h-1/6 flex items-center justify-between">
@@ -55,7 +55,13 @@
 
         </div>
     </div>
-    <div class="recipe-data  w-full flex items-start flex-wrap justify-start  gap-4 h-screen   mt-6">
+    <div class="over h-screen w-screen fixed hidden backdrop-blur-sm -ml-9   items-center justify-center top-1  z-100">
+        <div class="pop-up h-3/4 w-2/5 bg-red-700 rounded-2xl">
+            <div class="pop-up-nav"></div>
+            <div class="pop-up-content"></div>
+        </div>
+    </div>
+    <div class="recipe-data   min-h-screen w-full flex items-start flex-wrap justify-start  gap-4    mt-6">
         
         
        
