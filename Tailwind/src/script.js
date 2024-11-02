@@ -51,15 +51,10 @@ function dishCount(){
 }
 
 
-recipeDataContainer.addEventListener('click',(e)=>{
 let over=document.querySelector(".over")
+recipeDataContainer.addEventListener('click',(e)=>{
 if(e.target.tagName==="DIV"){
        over.style.display="flex"
 }
-
-     
-        
-      
-   
-
 })
+
