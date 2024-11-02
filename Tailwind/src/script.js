@@ -55,6 +55,10 @@ let over=document.querySelector(".over")
 recipeDataContainer.addEventListener('click',(e)=>{
 if(e.target.tagName==="DIV"){
        over.style.display="flex"
+       over.style.margin="0px 0px 0px 0px"
 }
 })
-
+let closepopup=document.querySelector(".close")
+closepopup.addEventListener('click',()=>{
+    over.style.margin="0px 0px 0px -2000px"
+})
