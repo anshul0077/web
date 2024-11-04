@@ -57,8 +57,19 @@ if(e.target.tagName==="DIV"){
        over.style.display="flex"
        over.style.margin="0px 0px 0px 0px"
 }
+
 })
 let closepopup=document.querySelector(".close")
 closepopup.addEventListener('click',()=>{
     over.style.margin="0px 0px 0px -2000px"
 })
+
+function viewRecipe(){
+recipeDataContainer.addEventListener('click',(e)=>{
+
+    console.log(e.target.tagName);
+})
+
+}
+setTimeout(viewRecipe(), 4000);
+
