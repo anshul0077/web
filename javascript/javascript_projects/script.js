@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     localStorage.setItem("tasks",JSON.stringify(newTask))
   }
   function renderTask(element){
-    console.log(element);
+    console.log(element.tasks);
+    const
     
   }
   
