@@ -3,11 +3,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   let taskBtn= document.querySelector("#add-task-btn")
   let todoList= document.querySelector("#todo-list")
   let newTask= JSON.parse( localStorage.getItem("tasks")) || []
+  let allTask
   newTask.forEach(element=> renderTask(element));
   taskBtn.addEventListener('click',()=>{
    let task=todoInput.value.trim()
    if(task==="") return;
-   let allTask={
+    allTask={
     id:Date.now(),
     tasks:task,
     completed:false,
@@ -24,8 +25,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
   function renderTask(element){
     console.log(element.tasks);
-    const
-    
+    const li=document.createElement('li')
+    li.setAttribute("data-id",allTask.id)
+    li.innerHTML=`<span>${element.tasks}</span> <button>Delete</button> `
+    todoList.appendChild(li)
   }
   
   
