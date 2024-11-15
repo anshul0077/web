@@ -95,8 +95,8 @@ product.forEach((e)=>{
   
      
       
-      totalPrize.innerHTML=total.toFixed(2)
-      }
+    }
+    totalPrize.innerHTML=total.toFixed(2)
     })
   }
   
