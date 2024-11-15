@@ -68,7 +68,8 @@ product.forEach((e)=>{
     alert("Checkout Sucessfully")
     cartItems.innerHTML=''
     totalPrize.innerHTML='0.00'
-          
+      
+    
   })
   
 })
