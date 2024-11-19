@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "What is the capital of France?",
       choices: ["Paris", "London", "Berlin", "Madrid"],
       answer: "Paris",
-      selected:"green"
+      selected:"purple"
     },
     {
       question: "Which planet is known as the Red Planet?",
       choices: ["Mars", "Venus", "Jupiter", "Saturn"],
       answer: "Mars",
-      selected:"green"
+      selected:"purple"
     },
     {
       question: "Who wrote 'Hamlet'?",
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Mark Twain",
       ],
       answer: "William Shakespeare",
-      selected:"green"
+      selected:"purple"
     },
     
   ];
@@ -98,6 +98,7 @@ restartBtn.addEventListener('click',()=>{
   score=0
   currentQuestionIndex=0
   startquiz()
+  selectedValue=0
 })
 
 function showresult() {
