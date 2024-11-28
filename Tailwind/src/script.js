@@ -64,6 +64,24 @@ closepopup.addEventListener('click',()=>{
     over.style.margin="0px 0px 0px -2000px"
 })
 
+
+let addrecipebtn=document.querySelector(".addrecipebtn")
+let recipePopup=document.querySelector(".add-recipe-popup")
+let closerecipe=document.querySelector(".addrecipeclose")
+let yourbtn=document.querySelector(".YourRecipe")
+let wrapper=document.querySelector(".wrapper")
+yourbtn.addEventListener('click',()=>{
+    wrapper.style.display="none"
+})
+recipePopup.style.display="none"
+addrecipebtn.addEventListener('click',()=>{
+recipePopup.style.display="flex"
+    
+})
+closerecipe.addEventListener("click",()=>{
+    recipePopup.style.display="none"
+    
+})
 function viewRecipe(){
 recipeDataContainer.addEventListener('click',(e)=>{
 
@@ -72,4 +90,5 @@ recipeDataContainer.addEventListener('click',(e)=>{
 
 }
 setTimeout(viewRecipe(), 4000);
+
 

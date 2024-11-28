@@ -8,7 +8,23 @@
 </head>
 <body>
     <!-- main container -->
-    <div class="wrapper overflow-x-hidden text-white h-screen w-screen"> 
+    <div class="yourrecipe h-screen w-screen bg-green-700 flex items-center justify-center">
+        <div class="main-con h-[80%] w-[80%] bg-red-600 rounded-lg flex gap-5 flex-col px-6 ">
+            <nav class="text-3xl ">Your Recipes are Here</nav>
+              <div class="own h-[45%] bg-green-800 rounded-md ">
+                 <div class="won-con h-80 w-80  bg-orange-500">
+          
+
+                 </div>
+              </div>
+              <div class="fav h-[45%] bg-green-400 rounded-md">
+                lorem
+              </div>
+
+        </div>
+
+    </div>
+    <div class="wrapper  overflow-x-hidden text-white h-screen w-screen"> 
         <!-- page1 -->
   <div id="home" class="p-4 h-full w-full bg-cover bg-[url('https://foodhub.modeltheme.com/wp-content/uploads/2020/02/foodhub-slider-main-food-v4.jpg?id=20741')] ">
  <nav class="w-full h-1/6 flex items-center justify-between">
@@ -23,13 +39,47 @@
         <ul class="w-full font-semibold flex items-center gap-0 justify-around">
             <li><a href="#home" class="">Home</a></li>
             <li><a href="#recipe" class="">Recipe</a></li>
-            <li><a href="#Pages" class="">Pages</a></li>
-            <li><a href="#your-recipe" class="">Add Recipe</a></li>
+            <li><a href="#Pages" class="YourRecipe">Your Recipe</a></li>
+            <li><a href="#your-recipe" class="addrecipebtn">Add Recipe</a></li>
             <li><a href="#favourite" class="">Favourite</a></li>
             <li><a href="" class=""> <button id="SR" class=" border-2 p-4 rounded-md">Submit Resipe</button></a></li>
         </ul>
     </div>
  </nav>
+ 
+ <div class="recipe-add h-screen   w-screen flex items-center justify-center   ">
+    <div class="add-recipe-popup  h-[80%] text-xl w-[40%]  rounded-lg flex items-center  flex-col bg-red-700   "  > 
+            <nav class=" flex items-center justify-between  text-black gap-2 w-full p-6 "> 
+                <h1 class="text-3xl">Add recipe here</h1>
+                <p  class="text-3xl addrecipeclose cursor-pointer">X</p> 
+            </nav>
+            <form action="" class="flex  gap-14  text-black flex-col text-3xl font-semibold mt-14 items-center justify-center ">
+            <label for="dishname">
+                Dish Name
+                <input   class="p-2 rounded-sm"  type="text" id="dishname" placeholder="Enter Dish name here" >
+            </label>
+            <label for="dishcate">
+                Dish category
+                <input   class="p-2 rounded-sm"  type="text" id="dishcate" placeholder="Enter Dish category here" >
+            </label>
+            <label for="dishdesc" class="felx items-center justify-center ">
+                Dish description
+                <textarea  class="p-2 rounded-sm"  rows="3"  name="" id="dishdesc" placeholder="Enter Dish description here"></textarea>
+            </label>
+            <label for="dishlocal">
+                Dish location
+                <input  class="p-2 rounded-sm  type="text" id="dishlocal" placeholder="Enter Dish location here" >
+            </label>
+            <label for="image">
+                Add Image
+                <input type="file" name="" id="image">
+            </label>
+            <button class="p-6 bg-orange-400 rounded-md px-10">Add Recipe</button>
+            </form>
+
+    </div>
+
+ </div>
  <div class="home-content flex items-center pb-14  w-full  h-[83%]  bg-auto ">
     <div class="content  ml-6 w-[43%]">
         <!-- <h2 class=" text-[3vw] pb-12 mb-8 font-serif">Find/Add recipe and eat  <span class="text-green-600 ">Yuuummmmy</span>  food</h2> -->
@@ -72,6 +122,7 @@
 
     </div>
   </div>
+  
     </div>
     <script src="./script.js"></script>
 </body>
