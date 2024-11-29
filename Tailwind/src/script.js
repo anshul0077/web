@@ -63,13 +63,47 @@ let closepopup=document.querySelector(".close")
 closepopup.addEventListener('click',()=>{
     over.style.margin="0px 0px 0px -2000px"
 })
+// inputs
+
+let dishname=document.querySelector(".dishname")
+let dishcate=document.querySelector(".dishcate")
+let dishdesc=document.querySelector(".dishdesc")
+let dishLocal=document.querySelector(".dishlocal")
+let dishimg=document.querySelector(".image")
+let mssg=document.querySelector(".messanger")
 
 
+
+
+
+//
+let addrbnt=document.querySelector("#addbtnrecipe")
 let addrecipebtn=document.querySelector(".addrecipebtn")
 let recipePopup=document.querySelector(".add-recipe-popup")
 let closerecipe=document.querySelector(".addrecipeclose")
 let yourbtn=document.querySelector(".YourRecipe")
 let wrapper=document.querySelector(".wrapper")
+addrbnt.addEventListener('click',()=>{
+    gettingvalues()
+    mssg.style.display="flex"
+    setTimeout(() => {
+    mssg.style.display="none"
+        
+    },2000);
+
+    
+})
+
+function gettingvalues(){
+let dishname1=dishname.value
+let dishcate1=dishcate.value
+let dishdesc1=dishdesc.value
+let dishLocal1=dishLocal.value
+let dishimg1=dishimg.value
+let mss1=mssg.value
+console.table(mss1,dishLocal1,dishname1)
+
+}
 yourbtn.addEventListener('click',()=>{
     wrapper.style.display="none"
 })

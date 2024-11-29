@@ -8,12 +8,22 @@
 </head>
 <body>
     <!-- main container -->
-    <div class="yourrecipe h-screen w-screen bg-green-700 flex items-center justify-center">
+    <div class="yourrecipe hidden h-screen w-screen bg-green-700 flex items-center justify-center">
         <div class="main-con h-[80%] w-[80%] bg-red-600 rounded-lg flex gap-5 flex-col px-6 ">
             <nav class="text-3xl ">Your Recipes are Here</nav>
-              <div class="own h-[45%] bg-green-800 rounded-md ">
-                 <div class="won-con h-80 w-80  bg-orange-500">
-          
+              <div class="own h-[45%] bg-green-800 rounded-md  flex items-center justify-center ">
+                 <div class="won-con h-80 w-80  bg-orange-500 flex items-center justify-center flex-col">
+                     <div class="main flex w-full h-[50%]  items-center justify-center">
+                        <div class="left">img</div>
+                        <div class="right">
+                            <p>name</p>
+                            <p>category</p>
+                        </div>
+                     </div>
+                     <div class="des h-[30%] w-full bg-teal-500 overflow-auto">
+                        <p>This is dex</p>
+                     </div>
+                     <button class="p-4 mt-2 bg-green-500 rounded-md">Delete</button>
 
                  </div>
               </div>
@@ -48,7 +58,7 @@
  </nav>
  
  <div class="recipe-add h-screen   w-screen flex items-center justify-center   ">
-    <div class="add-recipe-popup  h-[80%] text-xl w-[40%]  rounded-lg flex items-center  flex-col bg-red-700   "  > 
+    <div class="add-recipe-popup  h-[90%] text-xl w-[40%]  rounded-lg flex items-center  flex-col bg-red-700   "  > 
             <nav class=" flex items-center justify-between  text-black gap-2 w-full p-6 "> 
                 <h1 class="text-3xl">Add recipe here</h1>
                 <p  class="text-3xl addrecipeclose cursor-pointer">X</p> 
@@ -68,13 +78,13 @@
             </label>
             <label for="dishlocal">
                 Dish location
-                <input  class="p-2 rounded-sm  type="text" id="dishlocal" placeholder="Enter Dish location here" >
+                <input  class="p-2 rounded-sm"  type="text" id="dishlocal" placeholder="Enter Dish location here" >
             </label>
             <label for="image">
                 Add Image
                 <input type="file" name="" id="image">
             </label>
-            <button class="p-6 bg-orange-400 rounded-md px-10">Add Recipe</button>
+            <button class="p-6 bg-orange-400 rounded-md px-10 " id="addbtnrecipe">Add Recipe</button>
             </form>
 
     </div>
@@ -123,6 +133,9 @@
     </div>
   </div>
   
+    </div>
+    <div class="messanger hidden  items-center justify-center absolute top-6 left-[40%] h-14 rounded-lg w-96 bg-green-600">
+        <h1 class="text-3xl ">Your Recipe is Added</h1>
     </div>
     <script src="./script.js"></script>
 </body>
